@@ -47,7 +47,7 @@ public class RpcClient {
 		Request request = client.newRequest(address);
 		request.method(HttpMethod.POST);
 		request.content(new InputStreamContentProvider(input), "application/json");
-		request.timeout(1, TimeUnit.SECONDS);
+		request.timeout(Long.MAX_VALUE, TimeUnit.SECONDS);
 		try {
 			ContentResponse response = request.send();
 			String res = response.getContentAsString();

@@ -18,7 +18,7 @@ public class ResponsePacketManager {
         response.getWriter().println("{\"error\":\"hola\"}");
         synchronized (this) {
             try {
-                this.wait(1500);
+                this.wait(5000);
             } catch (Throwable e) {
                 e.printStackTrace();
             }

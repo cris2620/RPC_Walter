@@ -8,7 +8,7 @@ import com.srpc.transport.RpcClient;
 public class ServiceProxy {
 	
 	public static Object getServicio(Class<?> inter, String servicio, RpcClient client) {
-		return newInstance(Calculator.class, servicio, client);
+		return newInstance(inter, servicio, client);
 	}
 	
 	private static Object newInstance(Class<?> inter, String servicio, RpcClient client){

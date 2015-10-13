@@ -10,6 +10,7 @@ public class Test {
 	public static void main(String[] args) {
 		RpcApp rpc = new RpcApp(70);
 		rpc.addService(CalculatorImpl.class);
+                rpc.addService(ChatImpl.class);
 		rpc.start();	
 	}
 

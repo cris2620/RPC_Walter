@@ -12,4 +12,16 @@ public class CalculatorImpl  extends Service implements Calculator {
 	public int sum2Num(int a, int b) {
 		return a + b;
 	}
+	@Override
+        public int res2Num(int a, int b) {
+		return a - b;
+	}
+	@Override
+        public int mul2Num(int a, int b) {
+		return a * b;
+	}
+	@Override
+        public int div2Num(int a, int b) {
+		return a / b;
+	}
 }
