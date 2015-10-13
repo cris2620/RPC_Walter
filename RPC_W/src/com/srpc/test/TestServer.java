@@ -5,7 +5,7 @@ import com.srpc.exception.DuplicateServiceException;
 import com.srpc.service.ServiceManager;
 import com.srpc.transport.RpcServer;
 
-public class Test {
+public class TestServer {
 
 	public static void main(String[] args) {
 		RpcApp rpc = new RpcApp(70);

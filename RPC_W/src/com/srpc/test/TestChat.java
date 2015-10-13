@@ -3,15 +3,14 @@ package com.srpc.test;
 import com.srpc.transport.RpcClient;
 import java.util.Scanner;
 
-public class OtroTest {
+public class TestChat {
 
 	public static void main(String[] args) {
 		RpcClient client = new RpcClient("http://localhost:70/simpleRPC");		
-		Calculator cal = (Calculator)client.getProxy(Calculator.class, "CalculatorService");
                 Chat msj = (Chat)client.getProxy(Chat.class, "ChatService");
                 
                 Scanner scan = new Scanner(System.in);
-                System.out.println("Ingrese su nombre");
+                System.out.println("Ingrese su nombre:");
                 String nombre = scan.nextLine();
                 for(int i = 0; i< 3; i++){
                     String texto = scan.nextLine();
